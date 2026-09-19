@@ -1,0 +1,67 @@
+@mixin dark-theme {
+	--c-text: hsl(var(--hue-theme) 0% 100%);
+	--c-text-1: hsl(var(--hue-theme) 0% 90%);
+	--c-text-2: hsl(var(--hue-theme) 0% 70%);
+	--c-text-3: hsl(var(--hue-theme) 0% 50%);
+
+	// 深色模式：带紫调的背景（原来饱和度 0%~10%，是纯黑灰）
+	--c-bg: hsl(var(--hue-theme) 14% 12%);
+	--c-bg-1: hsl(var(--hue-theme) 13% 16%);
+	--c-bg-2: hsl(var(--hue-theme) 12% 20%);
+	--c-bg-3: hsl(var(--hue-theme) 11% 24%);
+	--c-bg-soft: hsl(var(--hue-theme) 100% 95% / 15%);
+	--c-border: hsl(var(--hue-theme) 10% 30%);
+	--c-bg-a50: hsl(var(--hue-theme) 13% 16% / 50%);
+	--c-bg-a80: hsl(var(--hue-theme) 13% 16% / 80%);
+	--c-primary: hsl(var(--hue-theme) 100% 70%);
+	--c-primary-soft: hsl(var(--hue-theme) 100% 60% / 20%);
+	--ld-bg-blur: var(--c-bg-a80);
+	--ld-bg-card: var(--c-bg-3);
+	--ld-bg-active: var(--c-primary-soft);
+	--ld-shadow: var(--c-bg-a50);
+
+	// 深色模式：紫色渐变
+	--c-page-bg: linear-gradient(165deg, hsl(var(--hue-theme) 15% 19%), hsl(var(--hue-theme) 11% 13%) 55%, hsl(calc(var(--hue-theme) + 20deg) 13% 16%));
+	--c-card-bg: linear-gradient(155deg, hsl(var(--hue-theme) 12% 25%), hsl(var(--hue-theme) 10% 18%));
+}
+
+:root,
+.light {
+	--hue-theme: 270deg;
+	// 浅色模式：页面保持干净，卡片用薰衣草渐变
+	--c-page-bg: none;
+	--c-card-bg: linear-gradient(155deg, hsl(var(--hue-theme) 68% 98%), hsl(var(--hue-theme) 52% 93%));
+	--c-text: hsl(var(--hue-theme) 0% 0%);
+	--c-text-1: hsl(var(--hue-theme) 0% 20%);
+	--c-text-2: hsl(var(--hue-theme) 0% 40%);
+	--c-text-3: hsl(var(--hue-theme) 0% 70%);
+	--c-bg: hsl(var(--hue-theme) 0% 100%);
+	--c-bg-1: hsl(var(--hue-theme) 20% 98%);
+	--c-bg-2: hsl(var(--hue-theme) 28% 95%);
+	--c-bg-3: hsl(var(--hue-theme) 25% 92%);
+	--c-bg-soft: hsl(var(--hue-theme) 20% 20% / 10%);
+	--c-border: hsl(var(--hue-theme) 22% 90%);
+	--c-bg-a50: hsl(var(--hue-theme) 20% 98% / 50%);
+	--c-bg-a80: hsl(var(--hue-theme) 20% 98% / 80%);
+	--c-primary: hsl(var(--hue-theme) 100% 55%);
+	--c-primary-soft: hsl(var(--hue-theme) 100% 60% / 15%);
+	--c-accent: hsl(180deg 70% 60%);
+	--ld-bg-blur: var(--c-bg-1);
+	--ld-bg-card: var(--c-bg);
+	--ld-bg-active: var(--c-bg);
+	--ld-shadow: var(--c-bg-soft);
+	--c-success: #5A5;
+	--c-success-soft: #3F32;
+	--c-warning: #D85;
+	--c-warning-soft: #F932;
+	--c-error: #D55;
+	--c-error-soft: #F332;
+
+	color-scheme: only light;
+}
+
+.dark {
+	@include dark-theme;
+
+	color-scheme: dark;
+}

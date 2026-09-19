@@ -20,7 +20,7 @@ const basicConfig = {
 	language: 'zh-CN',
 	timeEstablished: '2026-09-16',
 	timeZone: 'Asia/Shanghai',
-	url: 'http://localhost:3000/',
+	url: 'https://camonade-blog.pages.dev/',
 	defaultCategory: '未分类',
 }
 

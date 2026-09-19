@@ -63,4 +63,10 @@ const expand = ref(false)
 	height: 1.2em;
 	vertical-align: sub;
 }
+
+// 规范域名等长文本允许断行，避免把标签挤成竖排
+.dl-group :deep(dd) {
+	overflow-wrap: anywhere;
+	min-width: 0;
+}
 </style>

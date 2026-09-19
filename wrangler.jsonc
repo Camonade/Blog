@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "camonade-blog",
+  "compatibility_date": "2026-09-20",
+  "assets": {
+    // pnpm generate 产出的静态文件目录
+    "directory": ".output/public",
+    // 用 Nuxt 生成的 404.html 作为 404 页面
+    "not_found_handling": "404-page",
+    // /travel/shenhu → /travel/shenhu/index.html 的路径处理
+    "html_handling": "auto-trailing-slash"
+  }
+}

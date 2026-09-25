@@ -1,7 +1,7 @@
 ---
 title: 过去一年工作项目的总结和反思
 date: 2026-09-25 14:56:00
-categories: [杂谈]
+categories: [技术]
 tags: [复盘, 项目管理, 团队协作, AI工作流, 科研]
 image: /covers/year-review.jpg
 recommend: 1

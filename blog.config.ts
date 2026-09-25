@@ -1,12 +1,12 @@
 import type { FeedEntry } from './app/types/feed'
 
 const basicConfig = {
-	title: '等风来',
-	subtitle: '雨夹雪附身版',
+	title: '雨夹雪',
+	subtitle: '等风来第二人格',
 	// 长 description 利好于 SEO
 	description: '武汉大学计算机学院2025级学生，写点文字记录学习和生活，供日后瞻仰。',
 	author: {
-		name: '等风来',
+		name: '雨夹雪',
 		avatar: '/avatar.jpg',
 		email: '',
 		homepage: 'https://github.com/Camonade',

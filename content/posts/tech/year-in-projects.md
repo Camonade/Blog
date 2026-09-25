@@ -3,6 +3,7 @@ title: 过去一年工作项目的总结和反思
 date: 2026-09-25 14:56:00
 categories: [技术]
 tags: [复盘, 项目管理, 团队协作, AI工作流, 科研]
+description: 设计大赛的前端复刻、DevOps 的个人博客、RAG 知识图谱、CV 全景跟踪——四个项目走下来，关于工作流、团队沟通与前期规划的一份复盘。
 image: /covers/year-review.jpg
 recommend: 1
 type: story
